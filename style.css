@@ -1,3 +1,15 @@
 .carousel-inner {
    height: 70vh;
 }
+
+.jumbotron {
+   background-image: url('/img/eyebrows.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 50vw;
+}
+
+.jumbotron p, h1 {
+   /* color: #343434; */
+   color: #F8F9FA;
+}
