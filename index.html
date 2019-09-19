@@ -18,23 +18,23 @@
 
 <body>
    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <button type="button" class="btn btn-primary" title="Scotchy-scotch scotch">
+
+      <a class="btn btn-primary btn-sm" href="#scotch" role="button" title="Scotchy-scotch scotch">
          <i class="fas fa-glass-whiskey fa-2x"></i>
-      </button>
-      <button type="button" class="btn btn-primary" title="Classy">
+      </a>
+      <a class="btn btn-primary btn-sm" href="#classy" role="button" title="Classy">
          <i class="fas fa-user-tie fa-2x"></i>
-      </button>
-      <button type="button" class="btn btn-primary" title="Where to vote for me">
+      </a>
+      <a class="btn btn-primary btn-sm" href="#vote" role="button" title="Where to vote for me">
          <i class="fas fa-vote-yea fa-2x"></i>
-      </button>
-      <button type="button" class="btn btn-primary" title="USA USA USA">
+      </a>
+      <a class="btn btn-primary btn-sm" href="#usa" role="button" title="USA">
          <i class="fas fa-flag-usa fa-2x"></i>
-      </button>
-      <!-- <button type="button" class="btn btn-success ml-auto" title="Show me the money" data-toggle="modal" data-target="#exampleModalCenter">
-            <i class="fas fa-donate fa-3x"></i>-->
+      </a>
+
 
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-success ml-auto" title="Show me the money" data-toggle="modal"
+      <button type="button" class="btn btn-success btn-md ml-auto" title="Show me the money" data-toggle="modal"
          data-target="#exampleModalCenter">
          <i class="fas fa-donate fa-2x"></i>
       </button>
@@ -58,11 +58,10 @@
                   <!-- form -->
                   <form>
                      <div class="form-group">
-                        <label for="message-text" class="col-form-label">Amount:</label>
+                        <label for="message-text" class="col-form-label">Donation Amount $:</label>
                         <textarea class="form-control" id="message-text"></textarea>
                      </div>
                   </form>
-                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                </div>
             </div>
          </div>
@@ -71,18 +70,78 @@
       </button>
    </nav>
 
+   <!-- masthead -->
+   <header class="masthead">
+      <div class="container h-100">
+         <div class="row h-100 align-items-center">
+            <div class="col-6 text-center">
+               <h1 class="font-weight-light"><strong>Vote.</strong></h1>
+               <p class="lead">For Constable.</p>
+            </div>
+            <div class="col-6 text-right">
+               <h1 class="font-weight-light">Ron. Burgundy?</h1>
+               <p class="lead">"I'm kind of a big deal."</p>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- masthead end -->
+   
+   <!-- feature -->
+   <div class="card p-2">
+         <div class="card-header">
+           Get Educated
+         </div>
+         <div class="card-body">
+           <h5 class="card-title">What is a Constable?</h5>
+           <p class="card-text">"I believe it was an olden wooden ship that sank somewhere off the coast of San Diego. In it's honor they created an elected position called 'Constable' and I can't think of anyone better for the job."</p>
+           <a href="#" class="btn btn-primary">Go somewhere</a>
+         </div>
+       </div>
+
    <!-- Jumbotron -->
-   <div class="jumbotron bg-light">
+   <!-- <div class="jumbotron bg-light">
       <h1 class="display-4">Ron. Burgundy?</h1>
-      <p class="lead">Keep Kentucky Classy.<br>District 3 Constable</p>
-      <!-- <hr class="my-4"> -->
-      <p>"He's kind of a big deal."</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button" title="Learn More">
+      <p class="lead">Keep Kentucky Classy.<br>For District 3 Constable.</p>
+      <p>"I'm kind of a big deal."</p>
+      <a class="btn btn-primary btn-lg" href="#carouselExampleCaptions" role="button" title="Grow Your Brain">
          <i class="fas fa-brain fa-2x"></i>
          <i class="fas fa-long-arrow-alt-right fa-2x"></i>
          <i class="fas fa-brain fa-3x"></i>
       </a>
+   </div> -->
+
+   <!-- Cards -->
+
+   <div class="card-deck p-2" id="card-deck">
+      <div class="card">
+         <img src="img/scotch.jpeg" id="scotch" class="card-img-top" alt="...">
+         <div class="card-body">
+            <h5 class="card-title">On... Scotch</h5>
+            <p class="card-text">"I prefer to drink it. Bourbon too."</p>
+            <p class="card-text"><small class="text-muted">Last drink 3 mins ago</small></p>
+         </div>
+      </div>
+      <div class="card" id="classy">
+         <img src="img/pool.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+            <h5 class="card-title">On... Staying Classy</h5>
+            <p class="card-text">"I have many leather-bound books and my apartment smells of rich mahogany. And I
+               want to keep Kentucky classy." </p>
+            <p class="card-text"><small class="text-muted">Last pants purchase 3 days ago</small></p>
+         </div>
+      </div>
+      <div class="card" id="usa">
+         <img src="img/question.png" class="card-img-top" alt="...">
+         <div class="card-body">
+            <h5 class="card-title">On... America</h5>
+            <p class="card-text">"I will literally say anything you put on the teleprompter. What more could America
+               ask of a politician?"</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+         </div>
+      </div>
    </div>
+
    <!-- Carousel -->
    <div class="bd-example">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -93,9 +152,9 @@
          </ol>
          <div class="carousel-inner">
             <div class="carousel-item active">
-               <img src="/img/scotch.jpeg" class="d-block w-100" alt="...">
+               <img src="/img/founders.jpg" class="d-block w-100" alt="...">
                <div class="carousel-caption d-none d-md-block">
-                  <h5>RON BURGUNDY</h5>
+                  <h5>The only candidate endorsed by George Washington</h5>
                   <p>He's kind of a big deal.</p>
                </div>
             </div>
@@ -127,6 +186,19 @@
       </div>
    </div>
 
+   <!-- Vote Card -->
+   <div class="row no-gutters bg-light position-relative" id="vote">
+      <div class="col-md-6 mb-md-0 p-md-4">
+         <img src="img/airplane-ron.jpg" class="w-100" alt="...">
+      </div>
+      <div class="col-md-6 position-static p-4 pl-md-0">
+         <h5 class="mt-0" class="card-title">Where to Vote</h5>
+         <p class="card-text">Do as the Romans do. I'm not really sure what that means. But it probably means you can
+            click on the link to find where you should go and vote for me on November 5th.</p>
+         <a href="https://fayettecountyclerk.com/web/elections/votingLocations.htm" target="_blank"
+            class="btn btn-primary stretched-link">Fayette County Clerk - Voting Locations</a>
+      </div>
+   </div>
 
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->

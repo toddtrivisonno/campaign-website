@@ -1,15 +1,32 @@
+body {
+   background-color: #F8F9FA;
+}
+
 .carousel-inner {
    height: 70vh;
 }
+
+.masthead {
+   height: 100vh;
+   min-height: 500px;
+   background-image: url('img/eyebrows.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
 
 .jumbotron {
    background-image: url('/img/eyebrows.png');
    background-repeat: no-repeat;
    background-size: cover;
-   height: 50vw;
+   height: 48vw;
 }
 
 .jumbotron p, h1 {
    /* color: #343434; */
+   color: #F8F9FA;
+}
+
+.lead {
    color: #F8F9FA;
 }
