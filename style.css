@@ -1,3 +1,66 @@
-.carousel-inner {
-   height: 70vh;
+body {
+   background-color: #F8F9FA;
 }
+
+.sticky-top{
+   z-index: 9999;
+}
+
+.masthead {
+   height: 80vh;
+   min-height: 500px;
+   background-image: url('img/eyebrows.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+
+.jumbotron {
+   background-image: url('/img/eyebrows.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 48vw;
+}
+
+.jumbotron p, h1 {
+   /* color: #343434; */
+   color: #F8F9FA;
+}
+
+.lead {
+   color: #F8F9FA;
+}
+
+ /* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+      .masthead {
+         height: 50%;
+         /* min-height: 50px; */
+       }
+      }
