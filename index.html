@@ -32,8 +32,41 @@
          <i class="fas fa-flag-usa fa-2x"></i>
       </a>
 
+      <!-- Share Modal -->
+      <a class="btn btn-primary btn-sm" href="#" role="button" title="Tell your Friends" data-toggle="modal"
+         data-target="#shareBtn">
+         <i class="fas fa-share-square fa-2x"></i>
+      </a>
 
-      <!-- Button trigger modal -->
+      <div class="modal fade" id="shareBtn" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalCenterTitle">Voters Assemble! Share with your friends.</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <img src="img/assemble.gif" width=100%>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Share</button>
+               <!-- form -->
+               <form>
+                  <div class="form-group">
+                     <label for="message-text" class="col-form-label">Enter Email:</label>
+                     <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+      <!-- Donate modal -->
       <button type="button" class="btn btn-success btn-sm ml-auto" title="Show me the money" data-toggle="modal"
          data-target="#exampleModalCenter">
          <i class="fas fa-donate fa-2x"></i>
@@ -80,13 +113,14 @@
             <div class="col-6 text-center d-none d-lg-block">
                <h1 class="font-weight-light">Ron. Burgundy?</h1>
                <p class="lead">"I'm kind of a big deal."</p> -->
-            </div>
          </div>
+      </div>
       </div>
    </header>
    <!-- masthead end -->
 
-   <div class="container d-block "><!--d-lg-none-->
+   <div class="container d-block ">
+      <!--d-lg-none-->
       <h1 class="text-center text-primary" class="display-1"><strong>Vote.</strong> Ron. Burgundy? For Constable.</h1>
    </div>
 
